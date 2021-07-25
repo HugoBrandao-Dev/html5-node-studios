@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Tabelas</title>
+		<meta charset="utf-8">
+		<style>
+			table, th, td {
+				border: solid 1px black;
+			}
+			th, td {
+				padding: 5px 10px;
+			}
+
+			.nome {
+				background-color:  yellow;
+			}
+
+			.email {
+				background-color: red;
+			}
+
+			.telefone {
+				background-color: purple;
+			}
+
+			.cargo {
+				background-color: gray;
+			}
+		</style>
+	</head>
+
+	<body>
+		<h1>Tabelas</h1>
+		<table>
+			<caption>Pessoas cadastradas</caption>
+
+			<colgroup>
+				<col class="nome">
+				<col class="email">
+				<col class="telefone">
+				<col class="cargo">
+			</colgroup>
+
+			<thead>
+				<tr>
+					<th>Nome</th>
+					<th>Email</th>
+					<th>Telefone</th>
+					<th>Cargo</th>
+				</tr>
+			</thead>
+
+			<tbody>
+				<tr>
+					<td>Tobias</td>
+					<td>tobias_silva@gmail.com</td>
+					<td>(55) 00000-1111</td>
+					<td rowspan="2">Desenvolvedor de software</td>
+				</tr>
+				<tr>
+					<td>Josias</td>
+					<td>josias_pereira@hotmail.com</td>
+					<td>(55) 11111-2222</td>
+				</tr>
+				<tr>
+					<td>Jeremias</td>
+					<td>jere@outlook.com</td>
+					<td>(88) 22222-3333</td>
+					<td rowspan="2">Engenheiro de Hardware</td>
+				</tr>
+				<tr>
+					<td>Dinorá</td>
+					<td>dinora@gmail.com</td>
+					<td>(88) 33333-4444</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td colspan="4">Total de pessoas cadastradas: 4</td>
+				</tr>
+			</tfoot>
+		</table>
+	</body>
+</html>
