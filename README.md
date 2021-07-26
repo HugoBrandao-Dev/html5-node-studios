@@ -10,3 +10,6 @@ sejam carregados.
 
 Aula 12 - Áudio
 O atributo "autoplay" não funciona, TALVEZ por uma questão de privacidade, somente o "loop" e o "controls".
+
+Aula 13 - Vídeo
+O atributo "autoplay" também não funciona, somente o "loop" e o "controls".
