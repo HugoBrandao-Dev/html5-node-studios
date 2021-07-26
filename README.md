@@ -13,3 +13,9 @@ O atributo "autoplay" não funciona, TALVEZ por uma questão de privacidade, som
 
 Aula 13 - Vídeo
 O atributo "autoplay" também não funciona, somente o "loop" e o "controls".
+
+Aula 14 - Vídeo com legenda
+Tanto no chrome quando no edge, a legenda fica disponível somente no
+"primeiro clique" e mesmo assim não aparece no vídeo. No IE a opção de 
+troca de legenda fica disponível constantemente, mas mesmo assim a mesma
+não é mostrada.
