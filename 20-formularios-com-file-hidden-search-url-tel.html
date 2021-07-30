@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Formulários: file, hidden, search, url, tel</title>
+		<meta charset="utf-8">
+		<meta name="description" content="Utilizando os valores file, hidden, search, url e tel em atributos de inputs de formulários">
+		<meta name="keywords" content="file,hidden,search,url,tel,input,atributos,html">
+	</head>
+
+	<body>
+		<form action="cadastro.php" method="POST">
+			<fieldset>
+				<legend>Mais tipos de input em formulários</legend>
+				<input type="hidden" name="id">
+				Foto 3x4:<br>
+				<input type="file" name="ffoto" autofocus><br>
+				O que seja pesquisar?<br>
+				<input type="search" name="fpesquisa" placeholder="O que deseja saber?"><br>
+				Informe a url do seu site:<br>
+				<input type="url" name="furl" autocomplete="off" placeholder="www.seusite.com.br"><br>
+				Telefone de contato:<br>
+				<input type="tel" name="ftelefone" autocomplete="off" maxlength="11" placeholder="(xx)xxxxx-xxxx"><br>
+				<input type="submit" name="btn-enviar" value="Enviar">
+			</fieldset>
+		</form>
+	</body>
+<html>
