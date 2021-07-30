@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Formulários: select e optgroup</title>
+		<meta charset="utf-8">
+		<meta name="description" content="Utilizando as select e optgroup dentro do formulário">
+		<meta name="keywords" content="select,optgroup,html,tags">
+		<meta name="author" content="Hugo da Rocha">
+	</head>
+
+	<body>
+		<form action="cadastro.php" method="POST">
+			<fieldset>
+				<legend>Mais tags dentro do formulário</legend>
+				Tipo de veículo:
+				<select name="veiculo">
+					<optgroup label="Carros">
+						<option value="corolla">Corolla</option>
+						<option value="civic">Civic</option>
+						<option value="gol">Gol</option>
+					</optgroup>
+					<optgroup label="Motos">
+						<option value="pop100" selected>Pop 100</option>
+						<option value="yzf1000">YZF 1000</option>
+						<option value="cbr1000">CBR 1000</option>
+					</optgroup>
+				</select><br>
+				<input type="submit" name="btn-enviar" value="Enviar">
+			</fieldset>
+		</form>
+	</body>
+</html>
