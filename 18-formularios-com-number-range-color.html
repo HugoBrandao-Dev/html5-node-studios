@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Formulários: number, range e color</title>
+		<meta charset="utf-8">
+		<meta name="description" content="Utilizando os tipos number, range e color">
+		<meta name="keywords" content="number,range,color,formulario,tags,tipos">
+		<meta name="author" content="Hugo da Rocha">
+	</head>
+
+	<body>
+		<form action="cadastro.php" method="POST">
+			<fieldset>
+				<legend>Informações do pedido</legend>
+				Nome:<br>
+				<input type="text" name="fnome" required autofocus><br>
+				Senha:<br>
+				<input type="password" name="fsenha" required><br>
+				Email:<br>
+				<input type="email" name="fcontato-email" required><br><br>
+				Time:<br>
+				<input type="radio" name="ftime" value="flamengo"> Flamengo<br>
+				<input type="radio" name="ftime" value="fluminense"> Fluminense<br>
+				<input type="radio" name="ftime" value="vasco"> Vasco<br>
+				<input type="radio" name="ftime" value="palmeiras"> Palmeiras<br><br>
+				Cores do seu time:<br>
+				<input type="checkbox" name="fcor-time" value="preta"> Preta<br>
+				<input type="checkbox" name="fcor-time" value="branca"> Branca<br>
+				<input type="checkbox" name="fcor-time" value="verde"> Verde<br>
+				<input type="checkbox" name="fcor-time" value="vermelha"> Vermelha<br><br>
+				Quantidade de camisetas:
+				<input type="number" name="fquantidade-camisetas" min="5" max="50" step="5" required><br>
+				Quantidade de camisetas:
+				<input type="range" name="fquantidade-camisetas"><br>
+				Cor do nome do jogador:<br>
+				<input type="color" name="fcor-nome"><br>
+				<input type="submit" name="btn-enviar" value="Enviar">
+			</fieldset>
+		</form>
+	</body>
+</html>
