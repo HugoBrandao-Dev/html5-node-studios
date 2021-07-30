@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Formulários: autocomplete e placeholder</title>
+		<meta charset="utf-8">
+		<meta name="description" content="Utilizando atributos autocomplete placeholder">
+		<meta name="keywords" content="autocomplete,placeholder,html,formulario,tags,atributos">
+		<meta name="author" content="Hugo da Rocha">
+	</head>
+
+	<body>
+		<form action="cadastro.php" method="POST">
+			<fieldset>
+				<legend>Informações para cadastrar</legend>
+				Nome:<br>
+				<input type="text" name="fnome" autocomplete="off" required autofocus><br>
+				Senha:<br>
+				<input type="password" name="fsenha" required><br>
+				Email:<br>
+				<input type="email" name="femail" placeholder="seu_email@hotmail.com" required autocomplete><br>
+				PIN:<br>
+				<input type="password" name="fpin" disabled><br>
+				<input type="submit" name="btn-enviar" value="Enviar">
+			</fieldset>
+		</form>
+	</body>
+</html>
