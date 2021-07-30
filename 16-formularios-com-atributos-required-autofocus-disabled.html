@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Formulários: atributos required, autofocus e disabled</title>
+		<meta charset="utf-8">
+		<meta name="description" content="Utilizando os atributos required, autofocus e disabled">
+		<meta name="keywords" content="atributos,required,autofocus,disabled">
+		<meta name="author" content="Hugo da Rocha">
+	</head>
+
+	<body>
+		<form action="cadastro.php" method="POST">
+			<fieldset>
+				<legend>Informações pessoais</legend>
+				Nome:<br>
+				<input type="text" name="fnome" required autofocus><br>
+				Senha:<br>
+				<input type="password" name="fsenha" required><br>
+				Email:<br>
+				<input type="email" name="fcontato-email" required><br>
+				PIN:<br>
+				<input type="password" name="fpin" disabled><br>
+				<input type="submit" name="btn-enviar" value="Enviar">
+			</fieldset>
+		</form>
+	</body>
+</html>
