@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Formulários: date, time, month, week, datetime</title>
+		<meta charset="utf-8">
+		<meta name="description" content="Utilizando os valores date, time, month, week e datetime em inputs.">
+		<meta name="keywords" content="date,time,month,week,datetime,input,html">
+	</head>
+
+	<body>
+		<form action="cadastro.php" method="POST">
+			<fieldset>
+				<legend>Mais valores de tipos de input</legend>
+				<!-- 
+					O formato para especificar a data mínima e máxima é:
+					aaaa-mm-dd 
+				-->
+				Data de nascimento:<br>
+				<input type="date" name="fdata" min="2000-12-31" max="2021-07-30"><br>
+				Hora de nascimento:<br>
+				<input type="time" name="ftime"><br>
+				Mês e ano:<br>
+				<input type="month" name="fmes"><br>
+				Semana:<br>
+				<input type="week" name="fsemana"><br>
+				Data e hora:<br>
+				<input type="datetime-local" name="fdata-e-hora"><br>
+				<input type="submit" name="btn-enviar" value="Enviar">
+			</fieldset>
+		</form>
+	</body>
+</html>
