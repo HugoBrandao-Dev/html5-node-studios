@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Formulários: tipos email, radio e checkbox</title>
+		<meta charset="utf-8">
+		<meta name="description" content="Utilizando os tipos de tag email, radio e checkbox">
+		<meta name="keywords" content="email,radio,checkbox,atributos,input">
+		<meta name="author" content="Hugo da Rocha">
+	</head>
+
+	<body>
+		<form action="cadastro.php" method="POST">
+			<fieldset>
+				<legend>Informações pessoas</legend>
+				Nome:<br>
+				<input type="text" name="fnome" required autofocus><br>
+				Senha:<br>
+				<input type="password" name="fsenha" required><br>
+				PIN:<br>
+				<input type="password" name="fpin" disabled><br>
+				Email:<br>
+				<input type="email" name="fcontato-email" required><br><br>
+				Time:<br>
+				<input type="radio" name="ftime" value="flamengo"> Flamengo<br>
+				<input type="radio" name="ftime" value="fluminense"> Fluminense<br>
+				<input type="radio" name="ftime" value="vasco"> Vasco<br>
+				<input type="radio" name="ftime" value="palmeiras"> Palmeiras<br><br>
+				Cores da bandeira do seu time:<br>
+				<input type="checkbox" name="fcor-time" value="vermelha"> Vermelha<br>
+				<input type="checkbox" name="fcor-time" value="preta"> Preta<br>
+				<input type="checkbox" name="fcor-time" value="verde"> Verde<br>
+				<input type="checkbox" name="fcor-time" value="branca"> Branca<br>
+				<input type="submit" name="btn-enviar" value="Enviar">
+			</fieldset>
+		</form>
+	</body>
+</html>
