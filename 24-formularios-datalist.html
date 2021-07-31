@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Formulários: datalist</title>
+		<meta charset="utf-8">
+		<meta name="description" content="Utilizando a tag datalist no formulário">
+		<meta name="keywords" content="datalist,tag,formulários">
+		<meta name="author" content="Hugo da Rocha">
+	</head>
+
+	<body>
+		<form action="cadastro.php" method="POST">
+			<fieldset>
+				<legend>Mais tags no formulário</legend>
+				<!--
+					Já tem um autocomplete ligado, para quando digitar as iniciais de algum curso
+				-->
+				<input name="curso" list="lista-cursos">
+				<datalist id="lista-cursos">
+					<option value="HTML5">
+					<option value="CSS3">
+					<option value="JavaScript">
+				</datalist>
+			</fieldset>
+		</form>
+	</body>
+</html>
