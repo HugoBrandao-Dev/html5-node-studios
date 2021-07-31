@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Formulários: form, formaction, formmethod, formenctype, formnovalidate</title>
+		<meta charset="utf-8">
+		<meta name="description" content="Utilizando os atributos form, formaction, formmethod, formenctype e formnovalidate no formulário">
+		<meta name="keywords" content="form,formaction,formmethod,formenctype,formnovalidade,atributos,html,formulários">
+		<meta name="author" content="Hugo da Rocha">
+	</head>
+
+	<body>
+		<form 
+			id="form-cadastro" 
+			method="POST" 
+			enctype="application/x-www-form-urlencoded">
+			<fieldset>
+				<legend>Informações pessoais</legend>
+					Email:
+					<input type="email" name="femail" required>
+					<!-- 
+						Podemos também definir um enctype diferente
+						para cada elemento, basta utilizar o 
+						"formenctype"
+					 -->
+					<input 
+						type="submit" 
+						name="btn-cadastrar" 
+						value="Cadastrar"
+						formaction="cadastrar.php"
+						formmethod="POST">
+					<!-- 
+						formnovalidate define que o formulário não 
+						tenha validações 
+					-->
+					<input 
+						type="submit" 
+						name="btn-enviar" 
+						value="Enviar por email"
+						formaction="enviar-por-email.php"
+						formmethod="GET"
+						formtarget="_blank" 
+						formnovalidate>
+			</fieldset>
+		</form>
+		Nome:
+		<!-- 
+			O atributo form faz com que haja ligação entre 
+			o formulário de mesmo ID e este elemento em questão.
+		-->
+		<input type="text" name="fnome" form="form-cadastro">
+	</body>
+</html>
