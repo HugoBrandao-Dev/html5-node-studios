@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Map</title>
+		<meta charset="UTF-8">
+		<meta name="description" content="Mapeando diversos objetos objetos dentro de uma foto">
+		<meta name="keywords" content="map,mapear,imagem, area">
+		<meta name="author" content="Hugo da Rocha">
+	</head>
+
+	<body>
+		<h1>Map</h1>
+		<img src="imagens/imagens-workspace/workspace.png" alt="Uma imagem de um espaço
+		de trabalho, contendo uma prancheta, notebook, mouse sem fio, lápis e uma xícara de café." title="Workspace" usemap="#imagem-workspace">
+		<map name="imagem-workspace">
+
+			<!-- Retângulo -->
+			<area shape="rect" coords="35,108,159,285" href="imagens/imagens-workspace/clipboard.jpg" target="_blank" alt="Uma prancheta">
+			<area shape="rect" coords="682,205,741,320" href="imagens/imagens-workspace/smartphone.jpg" alt="Um celular do tipo smartphone" target="_blank">
+
+			<!-- Círculo -->
+			<area shape="circle" coords="680,131,35" href="imagens/imagens-workspace/coffee.jpg" target="_blank" alt="Uma Xícara">
+
+			<!-- Polígono -->
+			<area shape="poly" coords="213,146,213,168,230,167,230,382,591,382,591,167,607,168,607,146" href="imagens/imagens-workspace/laptop.jpg" target="_blank" alt="Um notebook">
+			<area shape="poly" coords="604,194,599,209,599,339,609,339,609,209" href="imagens/imagens-workspace/pencil.jpg" target="_blank" alt="Um lápis">
+			<area shape="poly" coords="793,215,777,221,773,229,773,281,777,288,793,293,809,288,813,281,813,230,808,221" href="imagens/imagens-workspace/mouse.jpg" target="_blank" alt="Um mouse sem fio">
+		</map>
+	</body>
+</html>
