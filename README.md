@@ -19,3 +19,6 @@ Tanto no chrome quando no edge, a legenda fica disponível somente no
 "primeiro clique" e mesmo assim não aparece no vídeo. No IE a opção de 
 troca de legenda fica disponível constantemente, mas mesmo assim a mesma
 não é mostrada.
+
+Aula 37 - menu e menuitem
+A tag já não é mais suportada nem mesmo pelo FireFox(versão 91.0.2). Sendo assim, o documento da aula foi removido.
