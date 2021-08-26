@@ -22,3 +22,6 @@ não é mostrada.
 
 Aula 37 - menu e menuitem
 A tag já não é mais suportada nem mesmo pelo FireFox(versão 91.0.2). Sendo assim, o documento da aula foi removido.
+
+Aula 38 - keygen
+A tag, assim como a da aula anterior, não é mais suportada. Portanto, o documento da aula foi removido.
