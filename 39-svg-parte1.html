@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="Como criar elemento em SVG">
+		<meta name="keywords" content="svg">
+		<meta name="author" content="Hugo da Rocha">
+		<title>SVG (parte 1)</title>
+		<style>
+			svg {
+				background-color: black;
+			}
+			/* 
+				fill-opacity: [VALOR EM PORCENTAGEM]; Opacidade somente para o preenchimento
+				stroke-opacity: [VALOR EM PORCENTAGEM]; Opacidade somente na borda
+			*/
+			svg rect {
+				fill: blue;
+				stroke: yellow;
+				stroke-width: 2px;
+				opacity: 0.7;
+			}
+		</style>
+	</head>
+
+	<body>
+		<svg width="300" height=200>
+			<rect width="250" height="150" x="25" y="25" rx="5" ry="5"/>
+		</svg>
+	</body>
+</html>
