@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="Criando linhas em SVG">
+		<meta name="keywords" content="linhas,svg,line,html">
+		<meta name="author" content="Hugo da Rocha">
+		<title>SVG (parte 3)</title>
+		<style>
+			svg {
+				background-color: red;
+			}
+			svg line {
+				stroke: black;
+				stroke-width: 5;
+			}
+			svg polyline {
+				fill: white;
+				stroke: black;
+				stroke-width: 2;
+			}
+		</style>
+	</head>
+
+	<body>
+		<svg width="350" height="226">
+			<line x1="0" y1="113" x2="175" y2="0" />
+			<line x1="175" y1="226" x2="350" y2="113" />
+			<polyline points="131,54 218,54 131,172 218,172 131,54" />
+		</svg>
+	</body>
+</html>
